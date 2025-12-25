@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message for Swetha</title>
+    <style>
+        body {
+            background: #fdf2f2;
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Card Animation */
+        .card {
+            background: white;
+            width: 85%;
+            max-width: 500px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(214, 48, 49, 0.2);
+            position: relative;
+            border: 2px solid #ff4d4d;
+            animation: slideUp 1s ease-out;
+            text-align: center;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            color: #d63031;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #2d3436;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            text-align: left;
+        }
+
+        .highlight {
+            color: #ff4d4d;
+            font-weight: bold;
+        }
+
+        /* Heart Animation */
+        .heart {
+            color: #ff4d4d;
+            display: inline-block;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            color: #d63031;
+            border-bottom: 1px solid #d63031;
+        }
+
+        /* Floating decoration */
+        .corner-decoration {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.2;
+        }
+        .top-left { top: 10px; left: 10px; }
+        .bottom-right { bottom: 10px; right: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="corner-decoration top-left">🎄</div>
+        <div class="corner-decoration bottom-right">🎁</div>
+
+        <h1>For Swetha <span class="heart">❤️</span></h1>
+        
+        <p>Dear Swetha,</p>
+        
+        <p>
+            I wanted to send you something special this Christmas. You are such an 
+            <span class="highlight">amazing friend</span>, and I'm so grateful to have you 
+            in my life. 
+        </p>
+
+        <p>
+            I hope your day is filled with laughter, your heart with love, and your 
+            New Year with endless happiness. Keep shining your bright light! ✨
+        </p>
+
+        <p>Merry Christmas and a Happy New Year in advance! 🌸</p>
+
+        <a href="index.html" class="back-link">← Go back to main screen</a>
+    </div>
+
+</body>
+</html>
